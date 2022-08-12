@@ -1,0 +1,53 @@
+[
+    {
+      "title": "Card Title 1",
+      "description": "Itallian B.M.T 12",
+      "buttonText": "Add To Cart",
+      "img": "assets/Images/TodaysMenu1.jpg"
+    },
+    {
+        "title": "Card Title 2",
+        "description": "Bar B Q Chicken 12",
+        "buttonText": "Add To Cart",
+        "img": "assets/Images/TodaysMenu2.jpg"
+    },
+    {    "title": "Card Title 3",
+        "description": "Veggie Delight 12",
+        "buttonText": "Add To Cart",
+        "img": "assets/Images/TodaysMenu3.jpg"
+    },
+    {
+        "title": "Card Title 1",
+        "description": "Itallian B.M.T 12",
+        "buttonText": "Add To Cart",
+        "img": "assets/Images/TodaysMenu4.jpg"
+    },
+    {   
+        "title": "Card Title 3",
+        "description": "Veggie Delight 12",
+        "buttonText": "Add To Cart",
+        "img": "assets/Images/TodaysMenu3.jpg"
+    },
+    {
+        "title": "Card Title 1",
+        "description": "Bar B Q Chicken 12",
+        "buttonText": "Add To Cart",
+        "img": "assets/Images/TodaysMenu1.jpg"
+    },
+    {
+        "title": "Card Title 1",
+        "description": "Itallian B.M.T 12",
+        "buttonText": "Add To Cart",
+        "img": "assets/Images/TodaysMenu5.jpg"
+    },
+    {   "title": "Card Title 1",
+        "description": "Bar B Q Chicken 12",
+        "buttonText": "Add To Cart",
+        "img": "assets/Images/TodaysMenu2.jpg"
+    },
+    {   "title": "Card Title 3",
+        "description": "Veggie Delight 12",
+        "buttonText": "Add To Cart",
+        "img": "assets/Images/TodaysMenu3.jpg"
+    }
+  ]

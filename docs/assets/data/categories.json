@@ -1,0 +1,39 @@
+[
+    {
+      "title": "Foot Long",
+      "description": "Piled with shripso, calama, calms, mussles, surimi.",
+      "link": "footlong",
+      "img": "assets/Images/FootLong.jpg"
+    },
+    {
+        "title": "6 Inch",
+        "description": "Piled with shripso, calama, calms, mussles, surimi.",
+        "link": "sixinch",
+        "img": "assets/Images/6Inch.jpg"
+    },
+    {
+        "title": "Salad",
+        "description": "Piled with shripso, calama, calms, mussles, surimi.",
+        "link": "salad",
+        "img": "assets/Images/Salad.jpg"
+    },
+    {
+        "title": "Platter",
+        "description": "Piled with shripso, calama, calms, mussles, surimi.",
+        "link": "platter",
+        "img": "assets/Images/Platter.jpg"
+    },
+    {
+        "title": "Deals",
+        "description": "Piled with shripso, calama, calms, mussles, surimi.",
+        "link": "deals",
+        "img": "assets/Images/Deals.jpg"
+    },
+    {
+        "title": "Combo",
+        "description": "Piled with shripso, calama, calms, mussles, surimi.",
+        "link": "combo",
+        "img": "assets/Images/TodaysMenu1.jpg"
+    }
+     
+  ]

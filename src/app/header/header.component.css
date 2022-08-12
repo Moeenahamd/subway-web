@@ -1,0 +1,51 @@
+ a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .link{
+    position: relative;
+  }
+  
+  .link:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #f0ad4e;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+  }
+  .link:hover{
+    color: white;
+  }
+  .link:hover:after{
+    width: 100%;
+    left: 0;
+    background:#f0ad4e;
+  }
+  #lblCartCount {
+    font-size: 12px;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -4px; 
+    margin-top: -5px;
+}
+  
+.origional{
+    background:rgb(37,112,47)
+}
+
+.animate {
+	transition: transform 0.5s;
+}
+.animate:hover{
+  transform: translate(0px, -10px);
+  }
+.customDropdown{
+  background-color: rgb(41,86,68);
+  max-width: 50px;
+}

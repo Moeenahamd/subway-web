@@ -1,0 +1,41 @@
+<div class="d-flex justify-content-center mt-md-5 py-5">
+    <div class="card bg-dark" style="border: double;border-width:4px;color:#f0ad4e;width:450px;">
+        <div class="card-body">
+            <h1 class="text-white text-center"style="font-family: cursive">Log In</h1>
+            <form [formGroup]="profileForm">
+                <div class="form-group text-white">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+                    <div *ngIf="email.invalid && (email.dirty || email.touched)"
+                        class="alert alert-danger">
+
+                        <div *ngIf="email.errors.required">
+                            Email is required.
+                        </div>
+                        <div *ngIf="email.errors.pattern">
+                            Email Formate Is Wrong.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-white">
+                  <label for="password">Password</label><input type="password" class="form-control" formControlName="password" placeholder="Password">
+                  <div *ngIf="password.invalid && (password.dirty || password.touched)"
+                        class="alert alert-danger">
+                        <div *ngIf="password.errors.required">
+                            Password No is required.
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="ml-md-4">
+                    <a class="text-warning" href="#">Forget Password</a>
+                </div>
+                <button type="submit" [disabled]="!profileForm.valid" class="btn btn-warning mt-md-5">Sign In</button>
+                <div class="text-white" style="float: right;margin-top: 80px;">
+                    Dont Have Account? <a class="text-warning" routerLink="register">Sign Up</a>
+                </div>
+              </form>
+        
+        </div>
+    </div>
+</div>

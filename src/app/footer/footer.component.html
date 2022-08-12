@@ -1,0 +1,28 @@
+<footer id="" class=" py-3 text-white  "style="background:black;">
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm pt-4">
+                <a class="ml-md-5 navbar-brand" href="#">
+                        <img src="{{footer.appLogo}}" width="150" height="40" alt="">
+                </a>
+            </div>
+            <div class="col-sm">
+                <div class="row py-1 text-white">
+                <span class="text-warning px-2">----</span> {{footer.companyName}}
+                </div>
+                <div class="row py-1 text-white">
+                    <span class="text-warning px-2">----</span> {{footer.address}}
+                </div>
+                <div class="row py-1 text-white">
+                    <span class="text-warning px-2">----</span>{{footer.phone}}
+                </div>
+            </div>
+            <div class="col-sm py-5 text-white">
+                <div class="row">
+                    <div class="col"*ngFor="let link of footer.socialLinks" > <i class="{{link.class}}"></i> <span class="text-warning font-weight-bold pl-1">  |</span></div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

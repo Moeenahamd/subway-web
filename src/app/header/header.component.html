@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light py-3 px-md-5" [ngClass]="[headerColor]"  (scroll)="onWindowScroll($event);">
+    <a class="ml-md-5 navbar-brand animate">
+        <img [src]="header.appLogo" width="150" height="45" alt="">
+    </a>
+    <div class="navbar-collapse collapse">
+        <ul class="navbar-nav ml-lg-5 mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="#">DELIVERING TO: {{header.address}} 
+                    <span style="padding-bottom:-5px;">
+                        <i class="material-icons">location_on</i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mr-md-5">
+            <div class="dropdown nav-item mx-md-1" *ngFor="let item of header.navElements; let i=index"> 
+                <a  [routerLink]="item.route"  class="nav-link text-white link " data-toggle="dropdown">
+                    {{item.name}}
+                </a>
+                <div *ngIf="item.subitem">
+                    <div class="dropdown-menu mt-4 px-1 customDropdown"style="border:none">
+                    <a class="dropdown-item py-2 link bg-transparent"  *ngFor="let sub of item.subitem" [routerLink]="sub.route">{{sub.name}}</a>
+                    </div>
+                </div>
+                
+              </div>
+            <li class="nav-item mx-md-1">
+                <a class="nav-link text-white" routerLink="cart">
+                    <i class="fa fa-motorcycle" style="font-size:18px"></i>
+                    <span class='badge badge-warning' id='lblCartCount' [(ngModel)]="cartCount"> {{cartCount}} </span>
+                </a>
+            </li>
+        </ul>
+    </div> 
+</nav>

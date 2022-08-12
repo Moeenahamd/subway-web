@@ -1,0 +1,32 @@
+.btn-rounded {
+    border-radius: 40px;
+    transition: all 0.3s ease 0s; 
+    padding:8px 42px;
+    
+}
+.btn-rounded:hover {
+    background-color: red;
+    
+}
+.card {
+    position: relative;
+  }
+.text-block {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #d9534f;
+    color: white;
+    text-align:center;
+    width:50px;
+    height:50px;
+    border-radius:50px;
+  }
+.boxshadow{
+  box-shadow: 0 2px 4px 0 #f0ad4e, 0 2px 6px 0 #f0ad4e;
+  border: 1px solid #f0ad4e;
+}
+
+.carousel-prev{position:absolute;top:0;border-radius: 50px;bottom:0;z-index:1;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:15%;color:#fff;text-align:center;opacity:.5;transition:opacity .15s ease}@media (prefers-reduced-motion:reduce){.carousel-next,.carousel-prev{transition:none}}.carousel-next:focus,.carousel-next:hover,.carousel-prev:focus,.carousel-prev:hover{color:red;text-decoration:none;outline:0;opacity:.9}.carousel-prev{left:0}.carousel-next{right:0}.carousel-next-icon,.carousel-prev-icon{display:inline-block;width:20px;height:20px;background:no-repeat 50%/100% 100%}.carousel-prev-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e")}
+
+

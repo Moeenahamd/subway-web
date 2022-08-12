@@ -1,0 +1,22 @@
+{
+    "appLogo":"assets/Images/AppLogo.png",
+    "companyName":"SUBWAY",
+    "address":"355,Block R Phase 2 Johar Town..",
+    "phone":"029-42-4100400",
+    "fax":"+5 8244 052",
+    "socialLinks":[
+        {
+            "class":"fa fa-facebook fa-1x"
+        },
+        {
+            "class":"fa fa-twitter fa-1x"
+        },
+        {
+            "class":"fa fa-instagram fa-1x"
+        },
+        {
+            "class":"fa fa-youtube fa-1x"
+        }
+        
+    ]
+}

@@ -1,0 +1,71 @@
+<div class="d-flex justify-content-center mt-md-5 my-5">
+    <div class="card bg-dark" style="border: double;border-width:4px;color:#f0ad4e;width:450px;">
+        <div class="card-body">
+            <h1 class="text-white text-center"style="font-family: cursive">Register</h1>
+            <form [formGroup]="profileForm">
+                <div class="form-group text-white">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" formControlName="firstName" placeholder="Enter your First Name" required>
+                    <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)"
+                        class="alert alert-danger">
+
+                        <div *ngIf="firstName.errors.required">
+                            First Name is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-white">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" formControlName="lastName" placeholder="Enter your Last Name">
+                    <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)"
+                        class="alert alert-danger">
+
+                        <div *ngIf="lastName.errors.required">
+                            Last Name is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-white">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+                    <div *ngIf="email.invalid && (email.dirty || email.touched)"
+                        class="alert alert-danger">
+
+                        <div *ngIf="email.errors.required">
+                            Email is required.
+                        </div>
+                        <div *ngIf="email.errors.pattern">
+                            Email Formate Is Wrong.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-white">
+                    <label for="telephone">Telephone</label>
+                    <input type="text" class="form-control" formControlName="phone" placeholder="+92-">
+                    <div *ngIf="phone.invalid && (phone.dirty || phone.touched)"
+                        class="alert alert-danger">
+                        <div *ngIf="phone.errors.required">
+                            Phone No is required.
+                        </div>                        
+                    </div>
+                </div>
+                <div class="form-group text-white">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" formControlName="password" placeholder="Password">
+                  <div *ngIf="password.invalid && (password.dirty || password.touched)"
+                        class="alert alert-danger">
+                        <div *ngIf="password.errors.required">
+                            Password No is required.
+                        </div>                        
+                    </div>
+                </div>
+                <button type="submit" (click)="register()" [disabled]="!profileForm.valid"class="btn btn-warning mt-md-4">Register</button>
+                <div class="text-white" style="float: right;margin-top: 80px;">
+                    Already Have an Account? <a class="text-warning" routerLink="login">Logn In</a>
+                </div>
+                
+              </form>
+        </div>
+    </div>
+  
+</div>

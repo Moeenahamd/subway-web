@@ -1,0 +1,44 @@
+[
+    {
+        "name":"FOOT LONG",
+        "img":"assets/Images/FootLong.jpg",
+        "time":"Offer End: 17: 25: 12",
+        "route":"category/footlong",
+        "class":"col-sm-6 px-2 py-1 animatediv"
+    },
+    {
+        "name":"6 INCH",
+        "img":"assets/Images/TodaysMenu2.jpg",
+        "time":"Offer End: 17: 25: 12",
+        "route":"category/sixinch",
+        "class":"col-sm-3 px-2 py-1 animatediv"
+    },
+    {
+        "name":"SALAD",
+        "img":"assets/Images/Salad.jpg",
+        "time":"Offer End: 17: 25: 12",
+        "route":"category/salad",
+        "class":"col-sm-3 px-2 py-1 animatediv"
+    },
+    {
+        "name":"PLATTER",
+        "img":"assets/Images/TodaysMenu5.jpg",
+        "time":"Offer End: 17: 25: 12",
+        "route":"category/platter",
+        "class":"col-sm-6 px-2 py-1 animatediv"
+    },
+    {
+        "name":"DEALS",
+        "img":"assets/Images/TodaysMenu1.jpg",
+        "time":"Offer End: 17: 25: 12",
+        "route":"category/deals",
+        "class":"col-sm-3 px-2 py-1 animatediv"
+    },
+    {
+        "name":"COMBO",
+        "img":"assets/Images/TodaysMenu3.jpg",
+        "time":"Offer End: 17: 25: 12",
+        "route":"category/combo",
+        "class":"col-sm-3 px-2 py-1 animatediv"
+    }
+]

@@ -1,0 +1,44 @@
+<div class="container pt-4">
+    <div class="row d-flex justify-content-center">
+        <h1 class="font-weight-bold">{{title}}</h1>
+    </div>
+    <div class="row pt-3">
+        <table class="table"style="border:3px solid #DCDCDC">
+            <thead class="border"> 
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total Price</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style="border:2px solid #DCDCDC" *ngFor="let item of cartItems; let i = index">
+                    <td ><img [src]="item.itemImage" width="150px" height="70px"></td>
+                    <td class="py-4">{{item.itemName}}</td>
+                    <td class="py-4">
+                        <button (click)="decrementCartItem(i)" class="btn btn-transpatent pl"><i class="fas fa-minus"></i></button>
+                        <span class="px-1" > {{item.cartItemsCount}}</span>
+                        <button (click)="incrementCartItem(i)"class="btn btn-transpatent pl"><i class="fas fa-plus"></i></button>
+                    </td>
+                    <td class="py-4">{{item.price}}</td>
+                    <td class="py-4">{{item.totalPrice}}</td>
+                    <td class="py-4"> <i class="fas fa-edit text-warning px-3" (click)="editCart(item,i)"></i><i class="fa fa-trash text-warning" (click)="deleteCart(i)"aria-hidden="true"></i></td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="row py-2 d-flex font-weight-bold justify-content-end">
+        Total Amount: {{count}} Rs
+    </div>
+    <div class="row pt-3 pb-5 d-flex justify-content-end">
+        <div class="mx-3">
+            <a class="btn btn-warning shadow text-white animate rounded-pill" routerLink="category" style="padding:12px 20px;">Add More</a>
+        </div>
+        <div class="">
+            <button class="btn btn-warning shadow text-white animate rounded-pill" routerLink="login" style="padding:12px 20px;">Proceed To CheckOut</button>
+        </div>
+    </div>
+    
+</div>

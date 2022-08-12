@@ -1,0 +1,28 @@
+*{padding:0;margin:0;}
+
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	background-color:#CCC;
+}
+
+.float{
+	width:60px;
+	height:60px;
+	background-color:transparent;
+	color:black;
+	text-align:center;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+.animate {
+    transition: transform 0.5s;
+    position: absolute; top:155px;left:25px
+}
+
+.animate:hover{
+  transform: translate(0px, -5px);
+  }

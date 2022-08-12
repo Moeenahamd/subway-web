@@ -1,0 +1,56 @@
+<h2 mat-dialog-title style="position :relative;font-family: bahnschrift; border-bottom: 1px solid gray;">{{data.head}}<div style="position:absolute; top:0px;right: 0px;"><button class="btn-rounded"><span style="padding-bottom: 10px;">X</span></button></div></h2>
+<mat-dialog-content>
+    <p><span class="font-weight-bold"style="font-size:20px">Bread </span><span>(Choose Item)</span></p>
+    <div class="row">
+        <div class="col-sm-3 py-2" *ngFor="let item of data.Breads">
+            <label class="container"><span style="font-size: 16px;">{{item}}</span>
+                <input type="radio"  name="radio" value="{{item}}"  
+                (change)="onBreadChange($event.target.value)">
+                <span class="checkmarkr"></span>
+            </label>
+        </div>
+    </div>
+    <p><span class="font-weight-bold "style="font-size:20px">Veggis </span><span>(Choose Item)</span></p>
+    <div class="row">
+        <div class="col-sm-3 py-2" *ngFor="let item of data.Veggis">
+            <label class="container"><span style="font-size: 16px;">{{item}}</span>
+                <input type="checkbox" value="{{item}}"  
+                (change)="onViggisChange($event.target.value)">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </div> 
+    <p><span class="font-weight-bold "style="font-size:20px">Sauces </span><span>(Choose Item)</span></p>
+    <div class="row">
+        <div class="col-sm-3 py-2" *ngFor="let item of data.Sauces">
+            <label class="container"><span style="font-size: 16px;">{{item}}</span>
+                <input type="checkbox" value="{{item}}"  
+                (change)="onSauceChange($event.target.value)">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </div> 
+    <p><span class="font-weight-bold "style="font-size:20px">Cheese </span><span>(Choose Item)</span></p>
+    <div class="row">
+        <div class="col-sm-3 py-2" *ngFor="let item of data.Cheese">
+            <label class="container"><span style="font-size: 16px;">{{item}}</span>
+                <input type="radio"  name="radio" value="{{item}}"  
+                (change)="onCheeseChange($event.target.value)">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end" style="position: relative;">
+    <div style="position: absolute; left : 5px">
+        
+        <button class="btn btn-warning btn-rounded" (click)="removeCartItem()"><span style="font-size: 30px;position:absolute; top:-7px;left:10px;">-</span></button>
+        <span class="px-3" > {{cartItemsCount}}</span>
+        <button class="btn btn-warning btn-rounded" (click)="addCartItem()"><span style="font-size: 20px;position:absolute; top:0px;left:83px;">+</span></button>
+    </div>
+    <button mat-button [mat-dialog-close]="true"(click)="onClose()" class="btn btn-warning">Add {{cartItemsCount}} To Cart</button>
+</mat-dialog-actions>
+
+
+
+    
