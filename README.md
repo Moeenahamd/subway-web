@@ -15,34 +15,34 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Home Page Slider
 
-![](src/assets/images/home-page.PNG)
+![](src/assets/Images/home-page.PNG)
 
 
 ## Home Page Menu Item Slider 
 
-![](src/assets/images/Menu-slider.PNG)
+![](src/assets/Images/Menu-slider.PNG)
 
 
 ## Menu Items
 
-![](src/assets/images/items.PNG)
+![](src/assets/Images/items.PNG)
 
 
 ## Cart Form
 
-![](src/assets/images/cart-form.PNG)
+![](src/assets/Images/cart-form.PNG)
 
 
 ## Cart Items
 
-![](src/assets/images/cart-items.PNG)
+![](src/assets/Images/cart-items.PNG)
 
 
 ## Reister Page
 
-![](src/assets/images/register-page.PNG)
+![](src/assets/Images/register-page.PNG)
 
 
 ## Login Page
 
-![](src/assets/images/login-page.PNG)
+![](src/assets/Images/login-page.PNG)
