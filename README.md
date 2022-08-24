@@ -1,27 +1,48 @@
-# TechverxApp
+# SubWay-Web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm install` for installing packages
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Home Page Slider
 
-## Running end-to-end tests
+![](src/assets/images/home-page.PNG)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Home Page Menu Item Slider 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![](src/assets/images/Menu-slider.PNG)
+
+
+## Menu Items
+
+![](src/assets/images/items.PNG)
+
+
+## Cart Form
+
+![](src/assets/images/cart-form.PNG)
+
+
+## Cart Items
+
+![](src/assets/images/cart-items.PNG)
+
+
+## Reister Page
+
+![](src/assets/images/register-page.PNG)
+
+
+## Login Page
+
+![](src/assets/images/login-page.PNG)
